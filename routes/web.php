@@ -22,7 +22,7 @@ Route::get('/', [PublicController::class, 'index']);
 //     return view('dashboard');
 // })->middleware(['auth'])->name('dashboard');
 
-Route::get('/home', function () {
+Route::get('/dashboard', function () {
     return view('backend.home');
 })->middleware(['auth'])->name('home');
 
